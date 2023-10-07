@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen relative mt-16;
+}
+
+header {
+  @apply z-50 flex items-center justify-between h-16 px-16 fixed left-0 right-0 top-0 backdrop-blur-sm shadow-lg bg-gradient-to-b from-[rgba(0,200,20,.5)] to-[rgba(0,200,20,.9)];
+}
+
+header .nav {
+  @apply flex text-white;
+}
+
+header .logo {
+  @apply text-2xl text-white;
+}
+
+header .logo span {
+  @apply block text-sm;
+}
+
+header .nav .nav-list a {
+  @apply h-16 flex items-center px-4 hover:text-green-200 transition duration-300;
+  text-shadow: 0 0 0.1rem black;
+}
+
+header .nav .nav-list a.active {
+  @apply text-slate-500;
+  text-shadow: none;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .teks {
+  position: absolute;
+  top: 0;
+}
+
+/* aside {
+  position: sticky;
+  top: 4rem;
+} */
+
+main {
+  @apply min-h-screen;
+}
+
+footer {
+  @apply border absolute bottom-0 left-0 right-0 text-center uppercase min-h-[4rem] bg-gradient-to-b from-[rgba(0,200,20,.4)] to-[rgba(0,200,20,.9)];
+}
