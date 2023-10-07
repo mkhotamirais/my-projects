@@ -1,0 +1,23 @@
+GET http://localhost:5000/api/productshome
+###
+GET http://localhost:5000/api/products
+###
+GET http://localhost:5000/api/products/65098437ccc6b68fd785b65
+###
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "name": "buku",
+    "price": 5000
+}
+###
+PATCH http://localhost:5000/api/products/65098e3922965004970a490d
+Content-Type: application/json
+
+{
+    "name": "buku update",
+    "price": 5000
+}
+###
+DELETE http://localhost:5000/api/products/65098e3922965004970a490d
